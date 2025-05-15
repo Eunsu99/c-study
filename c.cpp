@@ -18,13 +18,6 @@ void insert(int *heap, int data) {
 	//int size = sizeof(heap);//
 	Size = Size + 1;
 	
-	int i = Size;//여기서 i는 heap에서 노드의 인덱스
-	heap[i] = data;
-
-	while (i > 1 && heap[parent(i)] < heap[i]){
-		swap(heap[i], heap[parent(i)]);
-		i = parent(i);
-	}
 }
 
 int remove(int* heap) {
